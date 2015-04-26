@@ -1,11 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-#
-# Returns a list of 2 getters and 2 setters functions to access to :
-# - a matrix
-# - its inverse
+#######
+# Returns a list of functions providing access to a matrix and its inverse.
+#######
 makeCacheMatrix <- function(x = matrix()) {
 
   # Initializes the cached variable
@@ -32,9 +27,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+#######
 # Returns the inverse of a matrix.
 # The inverse is either retrieved from cache or computed if not available.
+#######
 cacheSolve <- function(x, ...) {
   ## Get the inverse of x
   invertedMatrix <- x$getInverse()
